@@ -1,0 +1,18 @@
+# Node
+node_modules/
+dist/
+build/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Secrets
+.env
+.env.*
+
+# OS junk
+.DS_Store
+Thumbs.db
