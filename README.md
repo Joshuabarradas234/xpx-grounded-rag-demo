@@ -224,7 +224,7 @@ This project demonstrates:
 ## 🧪 Running Locally
 
 
-##⚡ Quick Start
+⚡ Quick Start
 Backend:
 ```bash
 git clone https://github.com/your-username/xpx-grounded-rag-demo
