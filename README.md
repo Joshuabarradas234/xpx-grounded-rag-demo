@@ -220,17 +220,20 @@ This project demonstrates:
 * Docker-ready structure
 
 ---
-
+```
 ## 🧪 Running Locally
 
-Backend:
 
+##⚡ Quick Start
+Backend:
 ```bash
-cd backend
+git clone https://github.com/your-username/xpx-grounded-rag-demo
+cd xpx-grounded-rag-demo/backend
 python -m venv .venv
 .\.venv\Scripts\activate
 pip install -r requirements.txt
-python -m uvicorn app.main:app --reload --port 8000
+uvicorn app.main:app --reload --port 8000
+
 ```
 
 Frontend:
@@ -240,6 +243,9 @@ cd frontend
 npm install
 npm run dev
 ```
+ 🧪 Testing
+
+pytest tests/
 
 Swagger Docs:
 
@@ -269,9 +275,17 @@ This project documents architectural decisions using a lightweight ADR approach.
 - Cost vs Scalability
 - Simplicity vs Extensibility
 - Security vs Developer Velocity
+
+  ## Future Enhancements
+
+- Add real ML model integration (e.g., XGBoost or PyTorch model)
+- Implement structured audit log persistence
+- Add role-based access control
+- Deploy via Docker Compose or AWS ECS
+- Add automated unit tests and CI pipeline
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 backend/
