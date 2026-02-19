@@ -32,14 +32,7 @@ This is structured as an evidence-ready architecture suitable for fintech, lendi
 See:
 
 ``
-## Screenshots
-
-
-
-
-
-
-
+![Architecture diagram](docs/00-architecture-digram.png)
 ```
 
 ### Core Components
@@ -69,7 +62,7 @@ Screenshot:
 
 ```
 ### 1) API health check (FastAPI running)
-![API health check](docs/01-api-health-check-success.png)
+![API health check success](docs/01-api-health-check-success.png)
 ```
 
 ---
@@ -129,10 +122,8 @@ Example response:
 
 Screenshot:
 
-```
 ### 3) Explainable score response (API output)
-![Score response](docs/03-explainable-score-response.png)
-```
+![Explainable score response](docs/03-explainable-score-response.png)
 
 ---
 
@@ -148,7 +139,6 @@ A simple UI that submits salary advance requests and displays:
 
 Screenshot:
 
-```
 
 ### 4) OpenSearch environment configuration
 ![Frontend score + explanation](docs/04-frontend-score-and-explanation.png)
@@ -166,14 +156,12 @@ OPENSEARCH_ENDPOINT
 OPENSEARCH_USERNAME
 OPENSEARCH_PASSWORD
 ```
-
+```
 Screenshot:
 
-```
 ### 5) Frontend score + explanation (UI)
-![Frontend score + explanation](docs/04-frontend-score-and-explanation.png)
+![OpenSearch environment configuration](docs/05-opensearch-environment-configuration.png)
 ```
-
 Used for:
 
 * Policy metadata filtering
