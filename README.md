@@ -153,7 +153,7 @@ A simple UI that submits salary advance requests and displays:
 Screenshot:
 
 ```
-docs/04-frontend-score-and-explanation.png
+![Frontend Score & Explanation](docs/04-frontend-score-and-explanation.png)
 ```
 
 ---
