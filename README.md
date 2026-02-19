@@ -26,11 +26,37 @@ To simulate a real-world fintech decision engine that:
 This is structured as an evidence-ready architecture suitable for fintech, lending, and regulated environments.
 
 ---
+## Business Problem
 
-## 🏗 Architecture Overview
+Traditional salary-advance decisions are often:
+- Opaque (no explanation behind approvals/rejections)
+- Hard to audit
+- Vulnerable to inconsistent decision logic
+- Difficult to defend during compliance reviews
+
+Financial institutions require:
+- Explainable decisions
+- Policy traceability
+- Consistent scoring logic
+- Audit-friendly evidence
+
+This system solves that by implementing a local-first, explainable scoring engine that:
+- Generates a risk score
+- Provides top decision drivers
+- Cites the exact policy used
+- Produces structured JSON evidence
+
+## Architecture Overview
+
+This system implements a local-first explainable decision engine:
+
+Frontend (React)
+→ Backend API (FastAPI)
+→ Policy + ML scoring logic
+→ Explainable output (score + drivers + citation)
+→ Evidence pack generation
 
 See:
-
 ``
 ![Architecture diagram](docs/00-architecture-digram.png)
 ```
@@ -220,7 +246,29 @@ Swagger Docs:
 ```
 http://localhost:8000/docs
 ```
+## Decision-Making Documentation (ADR Approach)
 
+This project documents architectural decisions using a lightweight ADR approach.
+
+### 1. Alternatives Considered
+- Fully ML-driven scoring without rules
+- Fully rule-based policy engine
+- Cloud-hosted inference
+- Local-first inference
+- No explainability vs structured explanation output
+
+### 2. Why These Architectural Choices Were Made
+- Hybrid ML + rules to balance flexibility and compliance
+- Local-first design to avoid cloud dependency
+- FastAPI for lightweight API layer
+- React frontend for interactive demonstration
+- Structured JSON output for audit traceability
+
+### 3. Trade-Offs Balanced
+- Performance vs Explainability
+- Cost vs Scalability
+- Simplicity vs Extensibility
+- Security vs Developer Velocity
 ---
 
 ## 📂 Project Structure
