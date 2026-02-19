@@ -1,17 +1,3 @@
-Perfect. Good timing actually — this is where you turn it from “working project” into “recruiter-ready system”.
-
-Below is a **clean, architecture-focused README** tailored to your XPX Grounded RAG demo.
-
-You can paste this directly into a new file called:
-
-```
-README.md
-```
-
-in the root of your repo.
-
----
-
 # XPX Grounded RAG – Explainable Salary Advance Risk Engine
 
 A local-first **Grounded RAG + Explainable Scoring API** for salary advance decisioning.
