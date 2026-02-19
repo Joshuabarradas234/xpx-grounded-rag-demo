@@ -31,7 +31,15 @@ This is structured as an evidence-ready architecture suitable for fintech, lendi
 
 See:
 
-```docs/00-architecture-digram.png
+``
+## Screenshots
+
+
+
+
+
+
+
 ```
 
 ### Core Components
@@ -60,7 +68,8 @@ Verifies API availability.
 Screenshot:
 
 ```
-docs/01-api-health-check-success.png
+### 1) API health check (FastAPI running)
+![API health check](docs/01-api-health-check-success.png)
 ```
 
 ---
@@ -76,7 +85,8 @@ Interactive API documentation available at:
 Screenshot:
 
 ```
-docs/02-Swagger-ui-openapi.png
+### 2) Swagger / OpenAPI docs
+![Swagger UI](docs/02-Swagger-ui-openapi.png)
 ```
 
 ---
@@ -120,7 +130,8 @@ Example response:
 Screenshot:
 
 ```
-docs/03-explainable-score-response.png
+### 3) Explainable score response (API output)
+![Score response](docs/03-explainable-score-response.png)
 ```
 
 ---
@@ -138,7 +149,10 @@ A simple UI that submits salary advance requests and displays:
 Screenshot:
 
 ```
-![Frontend Score & Explanation](docs/04-frontend-score-and-explanation.png)
+
+### 4) OpenSearch environment configuration
+![Frontend score + explanation](docs/04-frontend-score-and-explanation.png)
+
 ```
 
 ---
@@ -156,7 +170,8 @@ OPENSEARCH_PASSWORD
 Screenshot:
 
 ```
-docs/05-opensearch-environment-configuration.png
+### 5) Frontend score + explanation (UI)
+![Frontend score + explanation](docs/04-frontend-score-and-explanation.png)
 ```
 
 Used for:
