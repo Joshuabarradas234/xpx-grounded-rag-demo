@@ -31,8 +31,7 @@ This is structured as an evidence-ready architecture suitable for fintech, lendi
 
 See:
 
-```
-00-architecture-diagram.png
+```docs/00-architecture-digram.png
 ```
 
 ### Core Components
